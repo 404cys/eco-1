@@ -1,0 +1,21 @@
+ .swiper-button-next,
+.swiper-button-prev {
+  display: none; 
+}
+
+ .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ff5722;  
+}
+
+ .custom-pagination {
+  background: #ffffff !important;  
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+ .swiper-pagination-bullet-active {
+  background: #b7b0b0 !important;
+}
