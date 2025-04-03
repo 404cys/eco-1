@@ -45,7 +45,7 @@ const ProductCard: FC<ProductCardProps> = ({ id, title, description, image, pric
   };
 
   return (
-    <div className="relative bg-white p-4 rounded-xl dark:bg-gray-950  shadow-lg border border-gray-200 hover:shadow-xl transition-transform transform hover:-translate-y-1 flex flex-col justify-between h-[400px] cursor-pointer">
+    <div className="relative  bg-white p-4 rounded-xl dark:bg-gray-950  shadow-lg border border-gray-200 hover:shadow-xl transition-transform transform hover:-translate-y-1 md:flex md:flex-col md:justify-between h-[400px] cursor-pointer ">
       
        <button
         className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-2xl z-20"
@@ -70,7 +70,7 @@ const ProductCard: FC<ProductCardProps> = ({ id, title, description, image, pric
             <div>
               <h2 className="text-lg font-semibold dark:text-gray-600 text-gray-800 line-clamp-1 h-[28px]">{title}</h2>
               <p className="text-sm text-gray-500 h-[20px]">{category}</p>
-              <p className="text-sm text-gray-500 line-clamp-2 h-[40px]">{description}</p>
+              <p className="text-sm text-gray-500 line-clamp-1 lg:line-clamp-2 md:line-clamp-2">{description}</p>
             </div>
 
              <div className="flex items-center mt-2">
@@ -80,7 +80,7 @@ const ProductCard: FC<ProductCardProps> = ({ id, title, description, image, pric
           </div>
 
            <div className="flex justify-between items-center mt-4">
-            <h3 className="text-green-600 font-bold text-lg">{price} $</h3>
+            <h3 className="text-green-600 font-bold text-sm">{price} $</h3>
             <button className="bg-gray-800 font-bold text-sm text-white px-4 py-2 flex items-center gap-2 rounded-md shadow-md hover:bg-gray-600 transition w-[90px]">
               Add <MdOutlineShoppingCart className="text-lg" />
             </button>
